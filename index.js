@@ -10,11 +10,11 @@ var answer1 = readLineSync.question(questionUserName)
 //high scores by users
 var highScore = [
   {
-  name : "Sourav",
-  score: 1 
+    name: "Sourav",
+    score: 1
   },
   {
-    name: "Tanay", 
+    name: "Tanay",
     score: 0
   }
 ]
@@ -22,8 +22,8 @@ var highScore = [
 //array of objects 
 var questions = [
   {
-  question: "Do you know what is my favourite webseries?",
-  answer : "Panchayet" 
+    question: "Do you know what is my favourite webseries?",
+    answer: "Panchayet"
   },
 
   {
@@ -33,46 +33,46 @@ var questions = [
 
   {
     question: "Do you know how many times I watched Panchayet?",
-    answer: "3" 
+    answer: "3"
   },
-  
+
   {
     question: "Do you know who calls himself Sakht launda?",
-    answer: "Zakir khan" 
-  }, 
+    answer: "Zakir khan"
+  },
 
-   {
+  {
     question: "Do you know what zakir khan does? ",
-    answer: "Comedy" 
+    answer: "Comedy"
   }
 
-  ];
+];
 
-function askQuestionsToUser(askedQuestion, expectedAnswer){
+function askQuestionsToUser(askedQuestion, expectedAnswer) {
   var givenAnswer = readLineSync.question(askedQuestion)
-  if(givenAnswer === expectedAnswer){
-    score =  score + 1;
+  if (givenAnswer.toLowerCase() === expectedAnswer.toLowerCase()) {
+    score = score + 1;
     console.log("Right!!!");
   }
-    
+
   else {
-  
+
     console.log("Wrong!!!")
   }
-  
-   console.log("Current Score"+score) 
-  
+
+  console.log("Current Score" + score)
+
 }
-function startGame(){
-  for (var i = 0; i< questions.length; i++){
+function startGame() {
+  for (var i = 0; i < questions.length; i++) {
     var ongoingQuestion = questions[i];
     askQuestionsToUser(ongoingQuestion.question, ongoingQuestion.answer)
   }
 }
-function showScore(){
+function showScore() {
 
-    console.log("Final Score of the User is: "+ score)
-    isTheHighestRecordBroken(score)
+  console.log("Final Score of the User " + answer1 + " is: " + score)
+  isTheHighestRecordBroken(score)
 
 }
 // bonus homework: has the user beaten high score?
@@ -85,8 +85,8 @@ function isTheHighestRecordBroken(score) {
     }
   }
   if (score > maxScore) {
-   console.log("Congrats! You are the highest scorer... Kindly, send me the screeshot of your score so that I can update the scoreboard");
-    
+    console.log("\n\n\nCongrats! You are the highest scorer... Kindly, send me the screeshot of your score so that I can update the scoreboard");
+
   }
 }
 startGame();
