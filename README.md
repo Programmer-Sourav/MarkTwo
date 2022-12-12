@@ -4,4 +4,4 @@ This is a CLI app for MarkTwo. It is about any topic you know about or passionat
 
 Techlogies used: Vanilla JS
 
-<a href="https://postimg.cc/LJkTVf0z" target="_blank"><img src="https://i.postimg.cc/2SMKr7QX/mark2-screenshot.png" alt="mark2-screenshot"/></a><br/><br/>
+<a href="https://postimg.cc/LJkTVf0z" target="_blank"><img src="https://i.postimg.cc/2SMKr7QX/mark2-screenshot.png" alt="mark2-screenshot"/></a><br/><br/> 
